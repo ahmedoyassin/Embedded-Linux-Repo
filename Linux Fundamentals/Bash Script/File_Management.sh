@@ -24,19 +24,19 @@ function moveFile () {
     for file in "${directory}/"*; do
     if [[ $file == *.txt ]]; then
         if [ -f "$file" ]; then
-    cp -r "$file" "$txt_dir"
+    mv "$file" "$txt_dir"
     fi
     elif [[ $file == *.jpg ]]; then
         if [ -f "$file" ]; then
-    cp -r "$file" "$jpg_dir"
+    mv "$file" "$jpg_dir"
     fi
     elif [[ $file == *.pdf ]]; then
         if [ -f "$file" ]; then
-    cp -r "$file" "$pdf_dir"
+    mv "$file" "$pdf_dir"
     fi
     else
         if [ -f "$file" ]; then
-    cp -r "$file" "$misc_dir"
+    mv "$file" "$misc_dir"
     fi
     fi
     done
