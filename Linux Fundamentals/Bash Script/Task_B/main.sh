@@ -63,6 +63,7 @@ function main() {
             ;;
             "${process_options[5]}")
             ResourceUsageAlerts
+
             ;;
     esac
     done

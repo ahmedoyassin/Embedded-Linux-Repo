@@ -73,6 +73,54 @@ function    SEARCH_FILTER() {
     pgrep -fl "$PROCESS_NAME"
 }
 
-function ResourceUsageAlerts() {
+function CPU_USAGE() {
+    local pid="$1"
+    local cpu_usage
+    local cpu_threshold=${CPU_THRESHOLD:-90}
+    if [ -d "/proc/$pid" ]; then
+        # Read process CPU usage
+        cpu_usage=$(awk '/^cpu /{print $2+$4}' "/proc/$pid/stat")
+        if [ -n "$cpu_usage" ]; then
+            if [ "$(echo "$cpu_usage > $cpu_threshold" | bc)" -eq 1 ]; then
+                echo "$(date +'%Y-%m-%d %H:%M:%S') - Process $pid has exceeded CPU threshold ($cpu_threshold%): CPU usage is $cpu_usage%" >>"$CONFILE"
+            fi
+        else
+            echo "$(date +'%Y-%m-%d %H:%M:%S') - Warning: CPU usage not available for process $pid" >>"$CONFILE"
+        fi
+    else
+        echo "$(date +'%Y-%m-%d %H:%M:%S') - Error: Process $pid not found." >>"$CONFILE"
+    fi
 
+}
+
+function MEM_USAGE() {
+    local pid="$1"
+    local memory_usage
+    local memory_threshold=${MEMORY_THRESHOLD:-90} # Default memory threshold set to 90%
+    if [ -d "/proc/$pid" ]; then
+        # Read process memory usage
+        memory_usage=$(awk '/VmRSS/{print $2}' "/proc/$pid/status")
+
+        if [ -n "$memory_usage" ]; then
+            if [ "$memory_usage" -gt "$memory_threshold" ]; then
+                        echo "$(date +'%Y-%m-%d %H:%M:%S') - Process $pid has exceeded memory threshold ($memory_threshold KB): Memory usage is $memory_usage KB" >>"$CONFILE"
+            fi
+        else
+                echo "$(date +'%Y-%m-%d %H:%M:%S') - Warning: Memory usage not available for process $pid" >>"$CONFILE"
+        fi
+    else
+        echo "$(date +'%Y-%m-%d %H:%M:%S') - Error: Process $pid not found." >>"$CONFILE"
+
+    fi
+}
+function ResourceUsageAlerts() {
+    while true; do
+        # list of all process IDs
+        pids=$(ls -1 /proc/ | grep -E "^[0-9]+$")
+
+        for pid in $pids; do
+            CPU_USAGE "$pid"
+            MEM_USAGE "$pid"
+        done
+    done
 }
