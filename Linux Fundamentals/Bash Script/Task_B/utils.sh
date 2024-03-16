@@ -84,8 +84,6 @@ function CPU_USAGE() {
             if [ "$(echo "$cpu_usage > $cpu_threshold" | bc)" -eq 1 ]; then
                 echo "$(date +'%Y-%m-%d %H:%M:%S') - Process $pid has exceeded CPU threshold ($cpu_threshold%): CPU usage is $cpu_usage%" >>"$CONFILE"
             fi
-        else
-            echo "$(date +'%Y-%m-%d %H:%M:%S') - Warning: CPU usage not available for process $pid" >>"$CONFILE"
         fi
     else
         echo "$(date +'%Y-%m-%d %H:%M:%S') - Error: Process $pid not found." >>"$CONFILE"
@@ -105,8 +103,6 @@ function MEM_USAGE() {
             if [ "$memory_usage" -gt "$memory_threshold" ]; then
                         echo "$(date +'%Y-%m-%d %H:%M:%S') - Process $pid has exceeded memory threshold ($memory_threshold KB): Memory usage is $memory_usage KB" >>"$CONFILE"
             fi
-        else
-                echo "$(date +'%Y-%m-%d %H:%M:%S') - Warning: Memory usage not available for process $pid" >>"$CONFILE"
         fi
     else
         echo "$(date +'%Y-%m-%d %H:%M:%S') - Error: Process $pid not found." >>"$CONFILE"
