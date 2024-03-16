@@ -75,13 +75,12 @@ function    SEARCH_FILTER() {
 
 function CPU_USAGE() {
     local pid="$1"
-    local cpu_usage
     local cpu_threshold=${CPU_THRESHOLD:-90}
     if [ -d "/proc/$pid" ]; then
         # Read process CPU usage
         cpu_usage=$(awk '/^cpu /{print $2+$4}' "/proc/$pid/stat")
         if [ -n "$cpu_usage" ]; then
-            if [ "$(echo "$cpu_usage > $cpu_threshold" | bc)" -eq 1 ]; then
+            if [  "$cpu_usage" -gt "$cpu_threshold" ]; then
                 echo "$(date +'%Y-%m-%d %H:%M:%S') - Process $pid has exceeded CPU threshold ($cpu_threshold%): CPU usage is $cpu_usage%" >>"$CONFILE"
             fi
         fi
@@ -93,8 +92,7 @@ function CPU_USAGE() {
 
 function MEM_USAGE() {
     local pid="$1"
-    local memory_usage
-    local memory_threshold=${MEMORY_THRESHOLD:-90} # Default memory threshold set to 90%
+    local memory_threshold=${MEMORY_THRESHOLD:-90}
     if [ -d "/proc/$pid" ]; then
         # Read process memory usage
         memory_usage=$(awk '/VmRSS/{print $2}' "/proc/$pid/status")
