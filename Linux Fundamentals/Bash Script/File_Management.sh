@@ -48,19 +48,25 @@ function fileSearchExtenstion () {
 
 # Check if any files types are found
 for file in "${directory}/"*; do
-    if [[ $file == *.txt ]]; then
-        echo "|-- txt/ "
-    echo "|   |--    $(basename "$file")"
+    if [[ $file == "*.$2" ]]; then
+        if [ -f "$file" ]; then
+            echo "|-- txt/ "
+            echo "|   |--    $(basename "$file")"
+        fi
     elif [[ $file == *.jpg ]]; then
-        echo "|-- jpg/ "
-    echo "|   |--    $(basename "$file")"
+        if [ -f "$file" ]; then
+            echo "|-- jpg/ "
+            echo "|   |--    $(basename "$file")"
+        fi
     elif [[ $file == *.pdf ]]; then
+         if [ -f "$file" ]; then
             echo "|-- pdf/ "
-    echo "|   |--    $(basename "$file")"
+            echo "|   |--    $(basename "$file")"
+        fi
     else
-            if [ -f "$file" ]; then
+        if [ -f "$file" ]; then
             echo "|-- misc/ "
-    echo "|   |--    $(basename "$file")"
+             echo "|   |--    $(basename "$file")"
     fi
 fi
 
@@ -75,9 +81,9 @@ function main () {
     # Checks if the given directory exists
     if [ -d "$directory" ]; then
     # echo "directory \"$directory\" exists"
-      declareDirectory "$directory"
-    fileSearchExtenstion "$directory"
-    moveFile "$directory"
+   # declareDirectory "$directory"
+    fileSearchExtenstion "$directory" "txt"
+   # moveFile "$directory"
   else
   echo "directory not found"
   fi
