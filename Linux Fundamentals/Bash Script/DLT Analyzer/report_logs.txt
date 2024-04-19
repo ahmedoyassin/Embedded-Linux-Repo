@@ -1,0 +1,13 @@
+******************************************************************
+********************  System Events Started **********************
+******************************************************************
+***** Here's a Report Summary *****
+No errors detected.
+No warns detected.
+No debugs detected.
+No info events detected.
+******************************************************************
+********************  System Events Started **********************
+******************************************************************
+** Startup Sequence:** Not found in logs.
+** System Health Check:** Not found in logs.
