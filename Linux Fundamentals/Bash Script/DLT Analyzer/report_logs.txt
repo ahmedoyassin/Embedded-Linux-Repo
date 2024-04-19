@@ -2,10 +2,10 @@
 ********************  System Events Started **********************
 ******************************************************************
 ***** Here's a Report Summary *****
-No errors detected.
+** Errors:** 7 errors were found.
 No warns detected.
 No debugs detected.
-No info events detected.
+** Info:** 119 info events were found.
 ******************************************************************
 ********************  System Events Started **********************
 ******************************************************************

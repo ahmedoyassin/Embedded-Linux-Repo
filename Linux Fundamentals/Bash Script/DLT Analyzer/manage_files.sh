@@ -1,5 +1,16 @@
 #!/bin/bash
 
+report_file="report_logs.txt"
+extraced_log_file="extraced_logs.log"
+log_directory="."
+log_entries=()
+
+# Global arrays of messages for each log level
+declare -a ERROR_MESSAGES=()
+declare -a WARNING_MESSAGES=()
+declare -a DEBUGGING_MESSAGES=()
+declare -a INFO_MESSAGES=()
+
 Report_File_Creation() {
   truncate -s 0 $report_file
   if [[ ! -f "$report_file" ]]; then
@@ -28,7 +39,7 @@ DLT_extract_log_info() {
  	    log_level="$(DLT_check_log_level "$message")"
             
             # Convert and format timestamp
-            formatted_timestamp=$(DLT_convert_timestamp_format "$timestamp")
+            formatted_timestamp=$(DLT_TimeStamp "$timestamp")
 
             # Append formatted log entry to the array
             log_entries+=( "$formatted_timestamp $log_level $message" )
@@ -70,31 +81,4 @@ DLT_count_log_levels(){
           INFO_MESSAGES+=("$timestamp $log_level  $message")
           ;;
       esac
-}
-
-DLT_check_log_level() {
-    local message="$1"
-    
-    #make it all lower case to avoid non-monocase words(Error, eRRor)
-    local message_lower=$(echo "$message" | tr '[:upper:]' '[:lower:]')
-    local log_level="INFO"  # Default log level is INFO
-    
-    #Check message if error
-    log_level=$(DLT_check_error "$message_lower" "$log_level")
-    
-    # If log level is still INFO, loop through WARNING keywords
-    
-    if [[ $log_level == "INFO" ]]; then
-    #Check message if warning
-    log_level=$(DLT_check_warning "$message_lower" "$log_level")
-    fi
-    
-    # If log level is still INFO, loop through DEBUG keywords
-    
-    if [[ $log_level == "INFO" ]]; then
-    #Check message if debug
-    log_level=$(DLT_check_debug "$message_lower" "$log_level")
-    fi
-    
-    echo "$log_level"
 }

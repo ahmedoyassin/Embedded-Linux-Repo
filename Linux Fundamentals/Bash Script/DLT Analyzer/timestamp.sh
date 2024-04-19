@@ -1,55 +1,53 @@
 #!/bin/bash
 
-#DLT_TimeStamp(){
-DLT_convert_timestamp_format() {
+DLT_TimeStamp(){
     local old_timestamp="$1"
     local month="${old_timestamp:0:3}"
     local day="${old_timestamp:4:2}"    
     local time="${old_timestamp:7:8}"   
     local year="$(date +'%y')"          
-    month="$(DLT_convert_month_format "$month")"
+    month="$(DLT_Month_Selection "$month")"
 
     local timestamp=$"[20${year}-${month}-${day} ${time}]"
     echo "$timestamp"
 }
-#DLT_Month_Selection(){
-DLT_convert_month_format() {
+DLT_Month_Selection(){
     local month="$1"
     case $month in
-    "January")
+    "Jan")
         month="01"
         ;;
-    "February")
+    "Feb")
         month="02"
         ;;
-    "March")
+    "Mar")
         month="03"
         ;;
-    "Apirl")
+    "Apr")
         month="04"
         ;;
     "May")
         month="05"
         ;;
-    "June")
+    "Jun")
         month="06"
         ;;
-    "July")
+    "Jul")
         month="07"
         ;;
-    "August")
+    "Aug")
         month="08"
         ;;
-    "September")
+    "Sep")
         month="09"
         ;;
-    "October")
+    "Oct")
         month="10"
         ;;
-    "November")
+    "Nov")
         month="11"
         ;;
-    "December")
+    "Dec")
         month="12"
         ;;
     *)

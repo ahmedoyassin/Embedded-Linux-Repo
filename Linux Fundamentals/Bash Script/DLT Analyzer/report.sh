@@ -2,6 +2,16 @@
 
 
 
+declare -i ERROR_COUNTS=0
+declare -i WARNING_COUNTS=0
+declare -i DEBUGGING_COUNTS=0
+
+
+
+declare startup_message="System Startup Sequence Initiated"
+declare health_check_message="System health check OK"
+
+
 Report_Summary(){
   echo "******************************************************************"
   echo "********************  System Events Started **********************"
@@ -79,7 +89,7 @@ Report_System_Traffic(){
 
 }
 
-DLT_count_log_levels(){
+DLT_Count_Logs(){
       local timestamp="$1"
       local log_level="$2"
       local message="$3"

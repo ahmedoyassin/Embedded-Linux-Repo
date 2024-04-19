@@ -1,10 +1,9 @@
 #!/bin/bash
-source Global_Variables.sh
 source manage_files.sh
 source DLT_filteration.sh
 source check.sh
 source report.sh
-#source timestamp.sh
+source timestamp.sh
 
 main(){
     extraced_file_creation

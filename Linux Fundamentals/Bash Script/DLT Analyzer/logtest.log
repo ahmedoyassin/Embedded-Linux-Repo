@@ -1,0 +1,126 @@
+Apr  16 04:51:47 yasso-Inspiron-5559 NetworkManager[837]: <info>  [1712385827.5412] manager: startup complete
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Finished Network Manager Wait Online.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Reached target Network is Online.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Download data for packages that failed at package install time.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Check to see whether there is a new version of Ubuntu available.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Reached target Timer Units.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Make remote CUPS printers available locally.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Starting Tool to automatically collect and submit kernel crash signatures...
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Starting Postfix Mail Transport Agent (instance -)...
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Condition check resulted in Ubuntu Pro Background Auto Attach being skipped.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started crash report submission.
+Apr  16 04:51:47 yasso-Inspiron-5559 NetworkManager[837]: <info>  [1712385827.9114] dhcp6 (wlp2s0): state changed new lease
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: kerneloops.service: Found left-over process 1068 (kerneloops) in control group while starting unit. Ignoring.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Tool to automatically collect and submit kernel crash signatures.
+Apr  16 04:51:47 yasso-Inspiron-5559 NetworkManager[837]: <info>  [1712385828.0689] manager: NetworkManager state is now CONNECTED_GLOBAL
+Apr  16 04:51:47 yasso-Inspiron-5559 whoopsie[1062]: [08:43:48] Using lock path: /var/lock/whoopsie/lock
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: whoopsie.service: Deactivated successfully.
+Apr  16 04:51:47 yasso-Inspiron-5559 avahi-daemon[798]: Registering new address record for fdd4:6ba6:7562:1200:4f22:d882:c169:5cef on wlp2s0.*.
+Apr  16 04:51:47 yasso-Inspiron-5559 ModemManager[962]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:1c.4/0000:02:00.0': not supported by any plugin
+Apr  16 04:51:47 yasso-Inspiron-5559 ModemManager[962]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:1c.5/0000:03:00.0': not supported by any plugin
+Apr  16 04:51:47 yasso-Inspiron-5559 Tor[1008]: Bootstrapped 0% (starting): Starting
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: logrotate.service: Deactivated successfully.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Finished Rotate log files.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Queued start job for default target Main User Target.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Created slice User Application Slice.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Created slice User Core Session Slice.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started Pending report trigger for Ubuntu Report.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Reached target Paths.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Reached target Timers.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Starting D-Bus User Message Bus Socket...
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on GnuPG network certificate management daemon.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on GnuPG cryptographic agent and passphrase cache.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on PipeWire Multimedia System Socket.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on debconf communication socket.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on Sound System.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on REST API socket for snapd user session agent.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on Speech Dispatcher Socket.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Listening on D-Bus User Message Bus Socket.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Reached target Sockets.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Reached target Basic System.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started User Manager for UID 128.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started PipeWire Multimedia Service.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Session c1 of User gdm.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started PipeWire Media Session Manager.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Starting Sound Service...
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started Service for snap application snapd-desktop-integration.snapd-desktop-integration.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started D-Bus User Message Bus.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Disk Manager.
+Apr  16 04:51:47 yasso-Inspiron-5559 udisksd[835]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[803]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.30' (uid=128 pid=1126 comm="/usr/bin/pipewire-media-session " label="unconfined")
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Starting RealtimeKit Scheduling Policy Service...
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[803]: [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully called chroot.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully dropped privileges.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started RealtimeKit Scheduling Policy Service.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully limited resources.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Running.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 0 threads of 0 processes of 0 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Watchdog thread running.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Canary thread running.
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[1137]: [session uid=128 pid=1137] AppArmor D-Bus mediation is enabled
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully made thread 1127 of process 1127 owned by '128' high priority at nice level -11.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 1 threads of 1 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully made thread 1125 of process 1125 owned by '128' high priority at nice level -11.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 2 threads of 2 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: message repeated 2 times: [ Supervising 2 threads of 2 processes of 1 users.]
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully made thread 1156 of process 1126 owned by '128' RT at priority 20.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 3 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 3 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully made thread 1164 of process 1125 owned by '128' RT at priority 20.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 4 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd[830]: overlord.go:271: Acquiring state lock file
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd[830]: overlord.go:276: Acquired state lock file
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[1137]: [session uid=128 pid=1137] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.5' (uid=128 pid=1128 comm="/usr/bin/snap run snapd-desktop-integration " label="unconfined")
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Starting flatpak document portal service...
+Apr  16 04:51:47 yasso-Inspiron-5559 kernel: [   89.508451] audit: type=1400 audit(1712385841.584:65): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/21184/usr/lib/snapd/snap-confine" pid=949 comm="snap-confine" capability=12  capname="net_admin"
+Apr  16 04:51:47 yasso-Inspiron-5559 kernel: [   89.508462] audit: type=1400 audit(1712385841.584:66): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/21184/usr/lib/snapd/snap-confine" pid=949 comm="snap-confine" capability=38  capname="perfmon"
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd[830]: daemon.go:247: started snapd/2.61.2 (series 16; classic) ubuntu/22.04 (amd64) linux/6.5.0-25-generic.
+Apr  16 04:51:47 yasso-Inspiron-5559 kernel: [   89.578673] loop22: detected capacity change from 0 to 8
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: tmp-snap.rootfs_9f9hiC.mount: Deactivated successfully.
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd[830]: daemon.go:340: adjusting startup timeout by 1m30s (pessimistic estimate of 30s plus 5s per snap)
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: tmp-syscheck\x2dmountpoint\x2d4286713724.mount: Deactivated successfully.
+Apr  16 04:51:47 yasso-Inspiron-5559 Tor[1008]: Starting with guard context "default"
+Apr  16 04:51:47 yasso-Inspiron-5559 Tor[1008]: Signaled readiness to systemd
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Anonymizing overlay network for TCP.
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[1137]: [session uid=128 pid=1137] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.6' (uid=128 pid=1203 comm="/usr/libexec/xdg-document-portal " label="unconfined")
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Starting sandboxed app permission store...
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[1137]: [session uid=128 pid=1137] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started sandboxed app permission store.
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[1137]: [session uid=128 pid=1137] Successfully activated service 'org.freedesktop.portal.Documents'
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: Started flatpak document portal service.
+Apr  16 04:51:47 yasso-Inspiron-5559 kernel: [   90.132684] audit: type=1400 audit(1712385842.216:67): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/21184/usr/lib/snapd/snap-confine" pid=1128 comm="snap-confine" capability=12  capname="net_admin"
+Apr  16 04:51:47 yasso-Inspiron-5559 kernel: [   90.132712] audit: type=1400 audit(1712385842.216:68): apparmor="DENIED" operation="capable" class="cap" profile="/snap/snapd/21184/usr/lib/snapd/snap-confine" pid=1128 comm="snap-confine" capability=38  capname="perfmon"
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Apr  16 04:51:47 yasso-Inspiron-5559 gnome-session[1160]: gnome-session-binary[1160]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Apr  16 04:51:47 yasso-Inspiron-5559 gnome-session[1160]: gnome-session-binary[1160]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Apr  16 04:51:47 yasso-Inspiron-5559 gnome-session-binary[1160]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Apr  16 04:51:47 yasso-Inspiron-5559 gnome-session-binary[1160]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 4 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully made thread 1414 of process 1127 owned by '128' RT at priority 5.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 5 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 5 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Successfully made thread 1416 of process 1127 owned by '128' RT at priority 5.
+Apr  16 04:51:47 yasso-Inspiron-5559 rtkit-daemon[1142]: Supervising 6 threads of 3 processes of 1 users.
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd[830]: backends.go:58: AppArmor status: apparmor is enabled and all features are available (using snapd provided apparmor_parser)
+Apr  16 04:51:47 yasso-Inspiron-5559 canonical-livepatch.canonical-livepatchd[1242]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/local/share/doc /usr/local/share/doc none bind,ro 0 0): cannot open directory "/usr/local": permission denied
+Apr  16 04:51:47 yasso-Inspiron-5559 kernel: [   91.363508] audit: type=1400 audit(1712385843.444:69): apparmor="DENIED" operation="open" class="file" profile="snap-update-ns.canonical-livepatch" name="/usr/local/" pid=1242 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+Apr  16 04:51:47 yasso-Inspiron-5559 canonical-livepatch.canonical-livepatchd[1242]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/gimp/2.0/help" because it would affect the host in "/var/lib/snapd"
+Apr  16 04:51:47 yasso-Inspiron-5559 canonical-livepatch.canonical-livepatchd[1242]: update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot write to "/var/lib/snapd/hostfs/usr/share/xubuntu-docs" because it would affect the host in "/var/lib/snapd"
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Snap Daemon.
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[803]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.40' (uid=0 pid=830 comm="/usr/lib/snapd/snapd " label="unconfined")
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Starting Wait until snapd is fully seeded...
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Starting Time & Date Service...
+Apr  16 04:51:47 yasso-Inspiron-5559 dbus-daemon[803]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Started Time & Date Service.
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd-desktop-integration.snapd-desktop-integration[1128]: Sorry, home directories outside of /home needs configuration.
+Apr  16 04:51:47 yasso-Inspiron-5559 snapd-desktop-integration.snapd-desktop-integration[1128]: See https://forum.snapcraft.io/t/11209 for details.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Main process exited, code=exited, status=1/FAILURE
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Failed with result 'exit-code'.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1021]: snap.snapd-desktop-integration.snapd-desktop-integration.service: Consumed 1.961s CPU time.
+Apr  16 04:51:47 yasso-Inspiron-5559 systemd[1]: Finished Wait until snapd is fully seeded.
